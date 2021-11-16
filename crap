@@ -41,19 +41,19 @@ host $domain
 
 #Google-Dorks
 
-#$BROWSER https://www.google.com/search?q=intitle%3A"index+of"+intext%3A"Includes+site%3A$domain"
+$BROWSER https://www.google.com/search?q=intitle%3A"index+of"+intext%3A"Includes+site%3A$domain"
 $BROWSER https://www.google.com/search?q=intitle%3A"index+of"+"db"+site%3A$domain
 $BROWSER https://www.google.com/search?q=intitle%3A"Index+of+/private/"+site%3A$domain
-#$BROWSER https://www.google.com/search?q=intitle%3A"Index+of"+.mysql_history+site%3A$domain
-#$BROWSER https://www.google.com/search?q=filetype%3Alog+"PHP+Parse+error"+"PHP+Warning"+"PHP+Error"+site%3A$domain
-#$BROWSER https://www.google.com/search?q=filetype%3Apem+intext%3Aprivate+site%3A$domain
-#$BROWSER https://www.google.com/search?q=site:$domain+ext:sql+|+ext:dbf+|+ext:mdb
-#$BROWSER https://www.google.com/search?q=site:$domain+ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup
-#$BROWSER https://www.google.com/search?q=site:$domain+inurl:dev
-#$BROWSER https://www.google.com/search?q=site:$domain+inurl:auth
-#$BROWSER https://www.google.com/search?q=site:$domain+-www
+$BROWSER https://www.google.com/search?q=intitle%3A"Index+of"+.mysql_history+site%3A$domain
+$BROWSER https://www.google.com/search?q=filetype%3Alog+"PHP+Parse+error"+"PHP+Warning"+"PHP+Error"+site%3A$domain
+$BROWSER https://www.google.com/search?q=filetype%3Apem+intext%3Aprivate+site%3A$domain
+$BROWSER https://www.google.com/search?q=site:$domain+ext:sql+|+ext:dbf+|+ext:mdb
+$BROWSER https://www.google.com/search?q=site:$domain+ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup
+$BROWSER https://www.google.com/search?q=site:$domain+inurl:dev
+$BROWSER https://www.google.com/search?q=site:$domain+inurl:auth
+$BROWSER https://www.google.com/search?q=site:$domain+-www
 
-#sleep $DELAY
+sleep $DELAY
 
 #PasteBin
 
@@ -84,5 +84,3 @@ $BROWSER https://www.zoomeye.org/searchResult?q=$domain
 # CENSYS
 
 $BROWSER https://www.censys.io/ipv4?q=$domain
-
- 
