@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Author: DRUK
@@ -27,7 +26,7 @@ echo "                **              **                ***    *           "
 echo "                                                   ******            "
 
 
-echo -en '\n'
+echo '\n'
 
 BROWSER="xdg-open" #Open-Browser
 
